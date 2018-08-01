@@ -3,8 +3,1041 @@
 <head>
     <meta charset="UTF-8">
     <title>知我药妆</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
+
+<!--header S-->
+<div class="header">
+
+    <div class="header_top">
+        <div class="header_top_content w1100">
+            <div class="header_top_content_left">
+                <ul>
+                    <li>欢迎来到知我！今天也要美美哒(っ´Ι`)っ</li>
+                    <li>
+                        <a href="login.html" rel="nofollow">请登录</a>
+                    </li>
+                    <li>
+                        <a href="register.html" rel="nofollow">快速注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_top_content_right">
+                <ul>
+                    <li class="item_down">
+                        <a href="#" rel="nofollow">
+                            <span>微信商城</span>
+                            <i></i>
+                        </a>
+                        <div class="item_down_nav"
+                             style="height: 85px">
+                            <img src="images/wechat_ewm1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="item_phone">
+                        <a href="#" rel="nofollow">
+                            手机知我
+                        </a>
+                    </li>
+                    <li class="item_down">
+                        <a href="#" rel="nofollow">
+                            <span>我的小窝</span>
+                            <i></i>
+                        </a>
+                        <div class="item_down_nav"
+                             style="height: 150px">
+                            <ul>
+                                <li><a href="#" rel="nofollow">我的订单</a></li>
+                                <li><a href="#" rel="nofollow">我的优惠券</a></li>
+                                <li><a href="#" rel="nofollow">我的收藏</a></li>
+                                <li><a href="#" rel="nofollow">我的预订</a></li>
+                                <li><a href="#" rel="nofollow">我的积分</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="item_down">
+                        <a href="#" rel="nofollow">
+                            <span>客户服务</span>
+                            <i></i>
+                        </a>
+                        <div class="item_down_nav"
+                             style="height: 120px; ">
+                            <ul>
+                                <li><a href="#" rel="nofollow">帮助中心</a></li>
+                                <li><a href="#" rel="nofollow">新浪微博</a></li>
+                                <li><a href="#" rel="nofollow">正品承诺</a></li>
+                                <li><a href="#" rel="nofollow">真伪查询</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" rel="nofollow">
+                            知我企业
+                        </a>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_center">
+        <div class="header_center_content w1100">
+            <div class="header_logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="知我药妆">
+                </a>
+            </div>
+            <div class="header_search">
+                <form action="" method="get">
+                    <input class="search_box_text" name="keyword" type="text" value="可莱丝"/>
+                    <input class="search_box_btn" name="search" type="submit" value="搜索"/>
+                </form>
+                <ul class="hotkey">
+                    <li><a href="#" rel="nofollow">保湿</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">面膜</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">洗面奶</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">补水</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">香水</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">眼霜</a><i class="line"></i></li>
+                    <li><a href="#" rel="nofollow">口红</a></li>
+                </ul>
+            </div>
+            <div class="header_cshopcar" id="header_cshopcar">
+                <p class="header_shopgoods_totleamout ">0</p>
+                <a class="header_myshopcar" href="" rel="nofollow">
+                    <span>我的购物车</span>
+                    <i></i>
+                </a>
+                <div class="header_shopgoods">
+                    <div class="shopgoods_empty">
+                        <p class="shopgoods_empty_img"></p>
+                        <p class="shopgoods_empty_title1">购物车为空</p>
+                        <p class="shopgoods_empty_title2">穷鬼什么都买不起</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header_footernav">
+        <div class="header_footernav_content w1100">
+            <div class="header_footernav_content_left">
+                <ul>
+                    <li class="header_footernav_content_left_item">
+                        <a href="#" class="hfcli_link">首页</a>
+                    </li>
+                    <li class="header_footernav_content_left_item" id="hfcli">
+                        <a href="#" class="hfcli_link"><span>知我商城</span></a>
+                        <div class="header_footernav_hide w1100">
+                            <div class="hfh_container">
+                                <div class="hfh_container_row">
+                                    <div class="hfh_container_inner hufu">
+                                        <dl>
+                                            <dt><a>护肤</a></dt>
+                                            <dd><a href="#">面膜面贴</a></dd>
+                                            <dd><a href="#">乳液凝露</a></dd>
+                                            <dd><a href="#">洁面卸妆</a></dd>
+                                            <dd><a href="#">眼精华/眼霜</a></dd>
+                                            <dd><a href="#">防晒隔离</a></dd>
+                                            <dd><a href="#">化妆水爽肤水</a></dd>
+                                            <dd><a href="#">眼膜/眼贴</a></dd>
+                                            <dd><a href="#">精华</a></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="hfh_container_inner yaozhuang">
+                                        <dl>
+                                            <dt><a>药妆</a></dt>
+                                            <dd><a href="#">乳液面霜</a></dd>
+                                            <dd><a href="#">洁面卸妆</a></dd>
+                                            <dd><a href="#">面部精华</a></dd>
+                                            <dd><a href="#">化妆水爽肤水</a></dd>
+                                            <dd><a href="#">面膜面贴</a></dd>
+                                            <dd><a href="#">喷雾</a></dd>
+                                            <dd><a href="#">眼精华/眼霜</a></dd>
+                                            <dd><a href="#">防晒隔离</a></dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="hfh_container_row">
+                                    <div class="hfh_container_inner xihu">
+                                        <dl>
+                                            <dt><a>洗护</a></dt>
+                                            <dd><a href="#">洗发护发</a></dd>
+                                            <dd><a href="#">口腔护理</a></dd>
+                                            <dd><a href="#">沐浴润体</a></dd>
+                                            <dd><a href="#">身体乳霜</a></dd>
+                                            <dd><a href="#">手足护理</a></dd>
+                                            <dd><a href="#">美体瘦身</a></dd>
+                                            <dd><a href="#">防晒隔离</a></dd>
+                                            <dd><a href="#">润唇膏</a></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="hfh_container_inner caizhuang">
+                                        <dl>
+                                            <dt><a>彩妆香氛</a></dt>
+                                            <dd><a href="#">唇彩/口红</a></dd>
+                                            <dd><a href="#">女士香水</a></dd>
+                                            <dd><a href="#">粉饼/蜜粉</a></dd>
+                                            <dd><a href="#">男士香水</a></dd>
+                                            <dd><a href="#">睫毛</a></dd>
+                                            <dd><a href="#">眼线</a></dd>
+                                            <dd><a href="#">腮红/胭脂</a></dd>
+                                            <dd><a href="#">粉底/妆前乳</a></dd>
+                                            <dd><a href="#">眼影/彩妆盘</a></dd>
+                                            <dd><a href="#">BB霜/CC霜</a></dd>
+                                        </dl>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="header_footernav_content_left_img"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_footernav_content_right">
+                <ul>
+                    <li class="hfcr_invest"><span>百度投资</span></li>
+                    <li class="hfcr_quality"><span>真品保证</span></li>
+                    <li class="hfcr_mail"><span>139元包邮</span></li>
+                    <li class="hfcr_return"><span>30天无理由退货</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--header E-->
+
+<!--slideshow_container S-->
+<div class="slideshow_container">
+    <div class="slideshow_img">
+        <ul>
+            <li class="myslide fade"><a href="#">
+                <img src="images/banner_1.jpg" alt="">
+            </a></li>
+            <li class="myslide fade"><a href="#">
+                <img src="images/banner_2.jpg" alt="">
+            </a></li>
+            <li class="myslide fade"><a href="#">
+                <img src="images/banner_3.jpg" alt="">
+            </a></li>
+            <li class="myslide fade"><a href="#">
+                <img src="images/banner_4.jpg" alt="">
+            </a></li>
+        </ul>
+    </div>
+    <div class="slideshow_btn">
+        <ul>
+            <li class="myslide_btn"></li>
+            <li class="myslide_btn"></li>
+            <li class="myslide_btn"></li>
+            <li class="myslide_btn"></li>
+        </ul>
+    </div>
+</div>
+<!--slideshow_container E-->
+
+<!--content_box S-->
+<div class="content_box" >
+    <div class="brand_box"></div>
+
+    <div class="newpro_box">
+        <h2>今日新品 HOT DEALS TODAY</h2>
+        <div class="item_list">
+            <ul class="clearfix">
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_1.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>保湿</span>
+                            <span>补水</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">可莱丝APE乳清蛋白面膜10片，恢复肌肤健康。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">
+                                <a href="#">加入购物车</a>
+                            </p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_2.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">巴宝莉节奏/动感节拍男士香水4.5ml，男人味十足！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_3.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>粉底</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">露华浓不脱色粉底液150 中干型30ml，露华浓明星产品！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_4.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>除痘</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">美若康隐形净痘贴（日用24贴）+（夜用12贴），照顾您的面子。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_5.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>眼部造型</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">媚诗林防水眼线笔NO.50，绽放属于你的魅惑双眼。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_6.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>补水</span>
+                            <span>保湿</span>
+                            <span>润肤</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">杰西卡的旅行胶原蛋白生物纤维面膜，呈现水嫩细腻的靓丽肌肤。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_7.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">范思哲爱罗斯女士香水Q版5ml，尽显女性未知魅力。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_1.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>保湿</span>
+                            <span>补水</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">可莱丝APE乳清蛋白面膜10片，恢复肌肤健康。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_2.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">巴宝莉节奏/动感节拍男士香水4.5ml，男人味十足！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_3.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>粉底</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">露华浓不脱色粉底液150 中干型30ml，露华浓明星产品！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_4.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>除痘</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">美若康隐形净痘贴（日用24贴）+（夜用12贴），照顾您的面子。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_5.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>眼部造型</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">媚诗林防水眼线笔NO.50，绽放属于你的魅惑双眼。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_6.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>补水</span>
+                            <span>保湿</span>
+                            <span>润肤</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">杰西卡的旅行胶原蛋白生物纤维面膜，呈现水嫩细腻的靓丽肌肤。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_7.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">范思哲爱罗斯女士香水Q版5ml，尽显女性未知魅力。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_1.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>保湿</span>
+                            <span>补水</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">可莱丝APE乳清蛋白面膜10片，恢复肌肤健康。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_2.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">巴宝莉节奏/动感节拍男士香水4.5ml，男人味十足！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_3.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>粉底</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">露华浓不脱色粉底液150 中干型30ml，露华浓明星产品！</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_4.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>除痘</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">美若康隐形净痘贴（日用24贴）+（夜用12贴），照顾您的面子。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_5.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>眼部造型</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">媚诗林防水眼线笔NO.50，绽放属于你的魅惑双眼。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_6.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>补水</span>
+                            <span>保湿</span>
+                            <span>润肤</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">杰西卡的旅行胶原蛋白生物纤维面膜，呈现水嫩细腻的靓丽肌肤。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="goods_img">
+                        <a href="#"><img src="images/goods_7.jpg" alt=""></a>
+                        <div class="goods_sort">
+                            <span>香氛</span>
+                        </div>
+                        <div class="goods_sellout"></div>
+                    </div>
+                    <div class="goods_info">
+                        <div class="goods_name">范思哲爱罗斯女士香水Q版5ml，尽显女性未知魅力。</div>
+                        <div class="price_info">
+                            <p class="pinfo_num">
+                                <i>￥</i>
+                                <span>85</span>
+                            </p>
+                            <p class="pinfo_buy">加入购物车</p>
+                        </div>
+                        <div class="sale_tip">
+                            <div class="sale_tip_time">
+                                <i>距离团购结束</i>
+                            </div>
+                            <div class="sale_tip_count">
+                                xxxx人已购买
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bottom_search clearfix ">
+            <form action="" method="get">
+                <input class="search_box_text" name="keyword" type="text" value="可莱丝"/>
+                <input class="search_box_btn" name="search" type="submit" value="搜索"/>
+            </form>
+            <ul class="hotkey">
+                <li><a href="#" rel="nofollow">保湿</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">面膜</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">洗面奶</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">补水</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">香水</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">眼霜</a><i class="line"></i></li>
+                <li><a href="#" rel="nofollow">口红</a></li>
+            </ul>
+    </div>
+</div>
+<!--content_box E-->
+
+<div class="space"></div>
+
+<!--footer S-->
+<div class="footer">
+    <div class="footer_intro w1100 clearfix">
+        <dl>
+            <dt>真品保证</dt>
+            <dd><a href="#" rel="nofollow">品牌合作</a></dd>
+            <dd><a href="#" rel="nofollow">严格把关</a></dd>
+            <dd><a href="#" rel="nofollow">百度投资</a></dd>
+            <dd><a href="#" rel="nofollow">全球品牌直供</a></dd>
+        </dl>
+        <dl>
+            <dt>30天包退</dt>
+            <dd><a href="#" rel="nofollow">退换货政策</a></dd>
+            <dd><a href="#" rel="nofollow">办理退换货</a></dd>
+            <dd><a href="#" rel="nofollow">售后服务</a></dd>
+        </dl>
+        <dl>
+            <dt>139元包邮</dt>
+            <dd><a href="#" rel="nofollow">配送政策</a></dd>
+            <dd><a href="#" rel="nofollow">快递查询</a></dd>
+        </dl>
+        <dl>
+            <dt>药妆专柜</dt>
+            <dd><a href="#">肤质判定</a></dd>
+            <dd><a href="#">肌肤问题</a></dd>
+            <dd><a href="#">达人推荐</a></dd>
+            <dd><a href="#">护肤常识</a></dd>
+        </dl>
+        <dl class="footer_intro_mrl">
+            <dt>关于知我</dt>
+            <dd><a href="#" rel="nofollow">知我介绍</a></dd>
+            <dd><a href="#" rel="nofollow">商务合作</a></dd>
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#" rel="nofollow">开放API</a></dd>
+        </dl>
+        <dl class="footer_intro_mrl">
+            <dt>新手指南</dt>
+            <dd><a href="#" rel="nofollow">购物流程</a></dd>
+            <dd><a href="#" rel="nofollow">支付方式</a></dd>
+            <dd><a href="#">化妆品品牌大全</a></dd>
+        </dl>
+        <dl class="footer_intro_mrl">
+            <dt>联系方式</dt>
+            <dd><a id="online_service" href="#" rel="nofollow">在线客服咨询</a></dd>
+            <dd class="contact_method">热线</dd>
+            <dd class="contact_phone">18601336775<br/>010-65389618</dd>
+        </dl>
+        <dl class="footer_intro_mrl footer_intro_wechat">
+            <dt>知我微信商城</dt>
+            <dd><img src="images/wechat_ewm1.jpg" alt="知我微信商城二维码"></dd>
+        </dl>
+    </div>
+    <div class="footer_center">
+        <div class="footer_center_box">
+            <ul>
+                <li class="fcb_invest"><span>百度投资</span></li>
+                <li class="fcb_quality"><span>真品保证</span></li>
+                <li class="fcb_return"><span>30天包退</span></li>
+                <li class="fcb_mail"><span>139元包邮</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--只在首页显示-->
+    <div class="footer_copyright">
+        <p class="footer_c_text1">&copy; 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：18601336775</p>
+        <p class="footer_c_text2"><a href="http://www.miibeian.gov.cn/" target="_blank"
+                                     rel="nofollow">京ICP备10047008号</a> |<a href="http://www.miibeian.gov.cn/"
+                                                                           target="_blank" rel="nofollow">京ICP证B2-20170630号</a>
+            | 网公安备1101054365号 | 营业执照 </p>
+        <p>
+            <img src="images/footer_copy_02.jpg" alt="支付宝特约商家">
+            <img src="images/footer_copy_03.jpg" alt="快捷支付">
+            <img src="images/footer_copy_05.jpg" alt="网上交易保障中心">
+        </p>
+    </div>
+</div>
+<!--footer E-->
+
+<!--sidebar S-->
+<div class="sidebar">
+    <div class="sidebar_content">
+        <ul class="sidebar_content_part1">
+            <li class="sidebar_user">
+                <i></i>
+                <div class="sidebar_user_hide">
+                    <a href="login.html">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                    <i class="trangle"></i>
+                </div>
+            </li>
+            <li class="sidebar_shopcart">
+               <i class="sidebar_shopcart_icon"></i>
+                <span> 购<br>物<br>车</span>
+                <i class="sidebar_shopcart_num">15</i>
+
+            </li>
+            <li class="sidebar_collect">
+                <i></i>
+                <div class="sidebar_collect_hide">
+                    <span>我的收藏</span>
+                    <i class="trangle"></i>
+                </div>
+            </li>
+            <li class="sidebar_foot">
+                <i></i>
+                <div class="sidebar_foot_hide">
+                    <span>我的足迹</span>
+                    <i class="trangle"></i>
+                </div>
+            </li>
+        </ul>
+        <ul class="sidebar_content_part2">
+            <li class="sidebar_qrcode">
+                <i></i>
+                <div class="sidebar_qrcode_hide">
+                    <ul>
+                        <li>
+                            <img src="images/wechat_ewm1.jpg" alt="">
+                            <span>知我微信商城</span>
+                        </li>
+                        <li>
+                            <img src="images/wechat_ewm1.jpg" alt="">
+                            <span>android版APP下载</span>
+                        </li>
+                        <li>
+                            <img src="images/wechat_ewm1.jpg" alt="">
+                            <span>iphone版APP下载</span>
+                        </li>
+                    </ul>
+                    <i class="trangle"></i>
+                </div>
+            </li>
+            <li class="sidebar_contact">
+                <i></i>
+                <div class="sidebar_contact_hide">
+                    <span>在线客服</span>
+                    <i class="trangle"></i>
+                </div>
+            </li>
+            <li class="sidebar_gotop">
+                <i class="top_trangle"></i>
+                <span>TOP</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--sidebar E-->
+
+<!--sidenav S-->
+<div class="sidenav">
+    <ul>
+        <li class="sidenav_index">
+            <a href="index.html">知我首页</a>
+        </li>
+        <li class="sidenav_news">
+            <a href="#">
+                <i></i>
+                <span>今日头条</span>
+            </a>
+
+        </li>
+        <li class="sidenav_brand">
+            <a href="#">
+                <i></i>
+                <span>品牌团</span>
+            </a>
+        </li>
+        <li class="sidenav_newpro">
+            <a href="#">
+                <i></i>
+                <span>今日新品</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--sidenav E-->
 
 </body>
 </html>
