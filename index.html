@@ -8,7 +8,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/index.js"></script>
 </head>
-<body>
+<body onload="checkCookie()">
 
 <!--header S-->
 <div class="header">
@@ -274,7 +274,7 @@
                                 <span>85</span>
                             </p>
                             <p class="pinfo_buy">
-                                <a href="#">加入购物车</a>
+                                加入购物车
                             </p>
                         </div>
                         <div class="sale_tip">
@@ -861,83 +861,7 @@
 
 <div class="space"></div>
 
-<!--footer S-->
-<div class="footer">
-    <div class="footer_intro w1100 clearfix">
-        <dl>
-            <dt>真品保证</dt>
-            <dd><a href="#" rel="nofollow">品牌合作</a></dd>
-            <dd><a href="#" rel="nofollow">严格把关</a></dd>
-            <dd><a href="#" rel="nofollow">百度投资</a></dd>
-            <dd><a href="#" rel="nofollow">全球品牌直供</a></dd>
-        </dl>
-        <dl>
-            <dt>30天包退</dt>
-            <dd><a href="#" rel="nofollow">退换货政策</a></dd>
-            <dd><a href="#" rel="nofollow">办理退换货</a></dd>
-            <dd><a href="#" rel="nofollow">售后服务</a></dd>
-        </dl>
-        <dl>
-            <dt>139元包邮</dt>
-            <dd><a href="#" rel="nofollow">配送政策</a></dd>
-            <dd><a href="#" rel="nofollow">快递查询</a></dd>
-        </dl>
-        <dl>
-            <dt>药妆专柜</dt>
-            <dd><a href="#">肤质判定</a></dd>
-            <dd><a href="#">肌肤问题</a></dd>
-            <dd><a href="#">达人推荐</a></dd>
-            <dd><a href="#">护肤常识</a></dd>
-        </dl>
-        <dl class="footer_intro_mrl">
-            <dt>关于知我</dt>
-            <dd><a href="#" rel="nofollow">知我介绍</a></dd>
-            <dd><a href="#" rel="nofollow">商务合作</a></dd>
-            <dd><a href="#">友情链接</a></dd>
-            <dd><a href="#" rel="nofollow">开放API</a></dd>
-        </dl>
-        <dl class="footer_intro_mrl">
-            <dt>新手指南</dt>
-            <dd><a href="#" rel="nofollow">购物流程</a></dd>
-            <dd><a href="#" rel="nofollow">支付方式</a></dd>
-            <dd><a href="#">化妆品品牌大全</a></dd>
-        </dl>
-        <dl class="footer_intro_mrl">
-            <dt>联系方式</dt>
-            <dd><a id="online_service" href="#" rel="nofollow">在线客服咨询</a></dd>
-            <dd class="contact_method">热线</dd>
-            <dd class="contact_phone">18601336775<br/>010-65389618</dd>
-        </dl>
-        <dl class="footer_intro_mrl footer_intro_wechat">
-            <dt>知我微信商城</dt>
-            <dd><img src="images/wechat_ewm1.jpg" alt="知我微信商城二维码"></dd>
-        </dl>
-    </div>
-    <div class="footer_center">
-        <div class="footer_center_box">
-            <ul>
-                <li class="fcb_invest"><span>百度投资</span></li>
-                <li class="fcb_quality"><span>真品保证</span></li>
-                <li class="fcb_return"><span>30天包退</span></li>
-                <li class="fcb_mail"><span>139元包邮</span></li>
-            </ul>
-        </div>
-    </div>
-    <!--只在首页显示-->
-    <div class="footer_copyright">
-        <p class="footer_c_text1">&copy; 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：18601336775</p>
-        <p class="footer_c_text2"><a href="http://www.miibeian.gov.cn/" target="_blank"
-                                     rel="nofollow">京ICP备10047008号</a> |<a href="http://www.miibeian.gov.cn/"
-                                                                           target="_blank" rel="nofollow">京ICP证B2-20170630号</a>
-            | 网公安备1101054365号 | 营业执照 </p>
-        <p>
-            <img src="images/footer_copy_02.jpg" alt="支付宝特约商家">
-            <img src="images/footer_copy_03.jpg" alt="快捷支付">
-            <img src="images/footer_copy_05.jpg" alt="网上交易保障中心">
-        </p>
-    </div>
-</div>
-<!--footer E-->
+
 
 <!--sidebar S-->
 <div class="sidebar">
@@ -953,10 +877,11 @@
                 </div>
             </li>
             <li class="sidebar_shopcart">
-               <i class="sidebar_shopcart_icon"></i>
-                <span> 购<br>物<br>车</span>
-                <i class="sidebar_shopcart_num">15</i>
-
+                <a href="shopCart.html">
+                    <i class="sidebar_shopcart_icon"></i>
+                    <span> 购<br>物<br>车</span>
+                    <i class="sidebar_shopcart_num">0</i>
+                </a>
             </li>
             <li class="sidebar_collect">
                 <i></i>
@@ -1039,5 +964,8 @@
 </div>
 <!--sidenav E-->
 
+<iframe src="iframe/footer.html" frameborder="0" width="100%" height="400px"></iframe>
+
 </body>
+
 </html>

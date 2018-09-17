@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<a href=""></a><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/goodsDetail.js"></script>
 </head>
-<body>
+<body onload="checkCookie_goods()" >
 
 <!--header S-->
 <div class="header">
@@ -235,30 +235,26 @@
                         <a href="#">范哲思</a>
                     </li>
                     <li class="pos_line"> ></li>
-                    <li class="pos_end">范思哲爱罗斯女士香水Q版5ml</li>
+                    <li class="pos_end"></li>
                 </ul>
             </div>
             <div class="detailpro_intro clearfix">
                 <p>
                     <span>今日特卖</span>
-                    范思哲爱罗斯女士香水Q版5ml,“Eros是爱神，
-                    而这款Eros Pour Femme（爱罗斯女士）
-                    香水的广告旨在展现爱神Eros被诱惑的一面，
-                    并强调女性的力量”Eros Pour Femme爱罗斯
-                    女士香水的香水瓶圆形的，尽显女性未知魅力。
+                    <span class="di_text"></span>
                 </p>
                 <div class="detailpro_intro_brand"></div>
             </div>
             <div class="detailpro_show clearfix">
                 <div class="detailpro_show_img">
-                    <img src="images/goods_show_7.jpg" alt="">
+                    <img src="" alt="">
                 </div>
                 <div class="detailpro_show_buy">
                     <span class="deadline">距团购结束</span>
                     <div class="dsb_btnbox clearfix">
                         <div class="dsb_btnbox_price">
                             <i>￥</i>
-                            <span>55</span>
+                            <span></span>
                         </div>
                         <a href="#" class="dsb_btnbox_price_afford">立即抢购</a>
 
@@ -337,10 +333,10 @@
             <div class="detail_info_box">
                 <div class="dib_title">
                     <ul>
-                        <li class="dib_title_item">产品参数</li>
-                        <li class="dib_title_item">本单详情</li>
-                        <li class="dib_title_item">使用方法</li>
-                        <li class="dib_title_item">用户口碑</li>
+                        <li class="dib_title_item"><a href="#dibc_parameters">产品参数</a></li>
+                        <li class="dib_title_item"><a href="#dibc_coupon">本单详情</a></li>
+                        <li class="dib_title_item"><a href="#dibc_explain">使用方法</a></li>
+                        <li class="dib_title_item"><a href="#dibc_usercomment">用户口碑</a></li>
                         <li class="dib_title_btn">
                             <i>￥</i><span>55</span>
                             <div class="dib_buy_btn"><a href="#">加入购物车</a></div>
@@ -348,7 +344,7 @@
                     </ul>
                 </div>
                 <div class="dib_content">
-                    <div class="dibc_parameters clearfix">
+                    <div class="dibc_parameters clearfix" id="dibc_parameters">
                         <div class="dibc_itemtitle">
                             <i></i>
                             <span>产品参数 PRODUCT PARAMETERS</span>
@@ -398,7 +394,7 @@
                             <img src="images/goods_intro_1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="dibc_coupon clearfix">
+                    <div class="dibc_coupon clearfix" id="dibc_coupon">
                         <div class="dibc_itemtitle">
                             <i></i>
                             <span>产品详情 COUPON</span>
@@ -414,8 +410,8 @@
                             <img src="images/coupon_4.jpg" alt="">
                             <img src="images/coupon_5.jpg" alt="">
                         </div>
-                    </div>
-                    <div class="dibc_usemethod clearfix">
+                    </div id>
+                    <div class="dibc_usemethod clearfix" >
                         <div class="dibc_itemtitle">
                             <i></i>
                             <span>使用方法 USE METHOD</span>
@@ -429,7 +425,7 @@
                             6. 擦香水时，须注意不要直接对着肌肤喷洒，尤其是会直接暴 晒的部位，如脸部，脖子，等等，这些部位因香料碰到阳光紫外线的 时候，会产生化学变化，导致皮肤黑色素的破坏而出现班疹和雀斑， 轻者也会使皮肤发痒，红肿。<br/>
                         </div>
                     </div>
-                    <div class="dibc_explain clearfix">
+                    <div class="dibc_explain clearfix" id="dibc_explain">
                         <div class="dibc_itemtitle">
                             <i></i>
                             <span>价格解译 PRICES EXPLAIN</span>
@@ -446,7 +442,7 @@
                             均为厂商建议零售价，并非原价！
                         </div>
                     </div>
-                    <div class="dibc_usercomment clearfix">
+                    <div class="dibc_usercomment clearfix" id="dibc_usercomment">
                         <div class="dibc_itemtitle">
                             <i></i>
                             <span>用户口碑 USER REPUTATION</span>

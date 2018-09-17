@@ -516,7 +516,7 @@ a{
     font-weight: 100;
     padding-right: 0px;
 }
-.detailpro_intro p span{
+.detailpro_intro p span:nth-child(1){
     color: #ff643c;
     font-size: 16px;
     font-weight: 800;
@@ -706,9 +706,17 @@ a{
     line-height: 40px;
     color: #fff;
 }
+.dib_title_float{
+    position: fixed;
+    top: 0;
+}
 .dib_title li{
     float: left;
     height: 40px;
+    cursor: pointer;
+}
+.dib_title li a{
+    color: #fff;
 }
 .dib_title_item{
     width: 110px;

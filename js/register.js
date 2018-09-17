@@ -1,3 +1,19 @@
+//记录用户
+function setCookie(cname,cvalue,exdays)
+{
+    var d = new Date();
+    d.setTime(d.getTime()+(exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+$(function () {
+    $("#register_btn").click(function () {
+        var name=$("#register_username").val();
+        setCookie("username",name,1)
+    })
+})
+
+
 $(document).ready(function () {
     //验证码
     var code;
@@ -24,13 +40,13 @@ $(document).ready(function () {
         createCode();
     });
 
-    //下面就是判断是否==的代码，无需解释
     $("#register_btn").bind('click', function () {
         var oValue = $(".u_info_code .sign_txt").val().toUpperCase();
+        var bValue = code.toUpperCase();
         $(".validate_code_return").html("");
         if (oValue == "") {
             $(".validate_code_return").html("<font color='red'>请输入验证码</font>");
-        } else if (oValue != code) {
+        } else if (oValue != bValue) {
             $(".validate_code_return").html("<font color='red'>验证码不正确，请重新输入</font>");
             oValue = "";
             createCode();
@@ -49,3 +65,75 @@ $(function () {
         $(this).find(".item_down_nav").slideUp("fast");
     })
 })
+
+//注册验证
+$(function () {
+    $.validator.addMethod("isPhoneNumber",function (val, ele, p) {
+        return /^[1][3,4,5,7,8][0-9]{9}$/.test(val);
+    })
+    $("#register_user_info").validate({
+        rules: {
+            account_register: {
+                required:true,
+                maxlength:11,
+                minlength:11,
+                remote:{
+                    url:"../server/register_checkAccount.php",
+                    type:"post"
+                },
+                isPhoneNumber:true,
+            },
+            password_register:{
+                required:true,
+                minlength:7,
+            },
+            password_confirm_register:{
+                required:true,
+                equalTo:"#register-password",
+            }
+
+            // verify_code:{
+            //     required:true,
+            //     equalTo:text(code),
+            // }
+        },
+        messages: {
+            account_register: {
+                required:"请输入手机号",
+                maxlength:"请输入正确的手机号",
+                minlength:"请输入正确的手机号",
+                isPhoneNumber:"请输入正确的手机号",
+                remote:"该手机号已被注册"
+            },
+            password_register:{
+                required:"请输入密码",
+                minlength:"请输入最少7位密码"
+            },
+            password_confirm_register:{
+                required:"请确认密码",
+                equalTo:"两次输入不一致"
+            }
+        },
+
+        submitHandler:function () {
+            $.ajax({
+                url: "../server/register.php",
+                type: "post",
+                data:$("#register_user_info").serialize(),
+                dataType: "json",
+                success: function (res) {
+                    if(res.status==1){
+                        alert("注册成功");
+                        window.location.href ="http://10.41.154.57/week3/index.html";
+                    }
+                    else{
+                        alert("注册出错，请重试")
+                    }
+                }
+            })
+        }
+    })
+})
+
+
+

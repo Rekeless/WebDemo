@@ -5,10 +5,13 @@
     <title>注册</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/jquery.validate.min.js"></script>
+    <script src="js/lib/additional-methods.min.js"></script>
     <script src="js/register.js"></script>
     <link rel="stylesheet" href="css/register.css" type="text/css">
 </head>
 <body>
+
 <!--header S-->
 <div class="header">
 
@@ -112,27 +115,27 @@
             </p>
         </div>
         <div class="mcregister_info">
-            <form name="register_user_info">
+            <form name="register_user_info" id="register_user_info">
                 <div class="u_info_h mobile">
                     <p class="u_info_txt">
-                        <input id="signup-mobile" class="sign_txt" type="text"
-                               name="mobile"  placeholder="请输入您的手机号" >
+                        <input id="register_username" class="sign_txt" type="text" value=""
+                               name="account_register"  placeholder="请输入您的手机号" >
                     </p>
                     <!-- <p class="error">手机格式有误，请重新输入</p> -->
                     <p class="error"></p>
                 </div>
                 <div class="u_info_password u_info_h password">
                     <p class="u_info_txt">
-                        <input id="signup-password" class="sign_txt" type="password"
-                               name="password" placeholder="请输入密码" >
+                        <input id="register-password" class="sign_txt" type="password" value=""
+                               name="password_register" placeholder="请输入密码" >
                     </p>
-                    <!-- <p class="error">密码长度需6-16位字符</p> -->
+                    <!-- <p class="error">密码长度需至少7位字符</p> -->
                     <p class="error"></p>
                 </div>
                 <div class="u_info_password u_info_h password_confirm">
                     <p class="u_info_txt">
                         <input id="signup-password-confirm" class="sign_txt" type="password"
-                               name="password2" placeholder="确定密码" ></p>
+                               name="password_confirm_register" placeholder="请确定密码" ></p>
                     <!-- <p class="error">两次输入的密码不匹配</p> -->
                     <p class="error"></p>
                 </div>
@@ -147,7 +150,7 @@
                     </p>
                 </div>
                 <div class="u_info_btn">
-                    <p><button id="register_btn">同意协议并注册</button></p>
+                    <p><button id="register_btn" type="submit">同意协议并注册</button></p>
                     <p class="zhiwo_xieyi"><a href="#">《知我网用户协议》</a></p>
                 </div>
 

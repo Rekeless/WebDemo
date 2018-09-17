@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="css/login.css" type="text/css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/jquery.validate.min.js"></script>
+    <script src="js/lib/additional-methods.min.js"></script>
     <script src="js/login.js"></script>
 </head>
 <body>
+
 <!--header S-->
 <div class="header">
 
@@ -110,14 +113,14 @@
             <a href="register.html">免费注册</a>
         </div>
         <div class="mclogin_info">
-            <form name="login_user_info">
+            <form name="login_user_info" id="login_user_info">
                 <div class="u_info_account">
                     <p class="u_info_name">
                         <label for="login-username">账号</label>
                     </p>
                     <p class="u_info_txt">
                         <input class="sign_txt" type="text" id="login-username" value=""
-                               placeholder="请输入用户名/邮箱/手机号" name="username">
+                               placeholder="请输入用户名/邮箱/手机号" name="account">
                     </p>
                 </div>
                 <div class="u_info_password">
@@ -148,9 +151,9 @@
                     </p>
                     <p class="forget_password"><a href="#">忘记密码？</a></p>
                 </div>
-                <div class="u_info_btn">
+                <div class="u_login_btn">
                     <p>
-                        <button id="login_btn">登录</button>
+                        <button id="login_btn" type="submit">登录</button>
                 </div>
             </form>
         </div>
@@ -248,5 +251,6 @@
     </div>
 </div>
 <!--footer E-->
+
 </body>
 </html>

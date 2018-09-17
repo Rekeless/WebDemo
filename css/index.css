@@ -51,6 +51,9 @@ a{
     float: left;
     margin-right: 30px;
 }
+.header_top_content_left li:nth-child(3){
+    cursor: pointer;
+}
 .header_top_content_right{
     float: right;
 }
@@ -594,6 +597,7 @@ a{
     line-height: 26px;
     color: #fff;
     text-align: center;
+    cursor: pointer;
 }
 .price_info .pinfo_buy a{
     width: 90px;
@@ -872,6 +876,7 @@ a{
 .sidebar_shopcart span{
     margin: 8px auto;
     display: block;
+    color: #fff;
 }
 .sidebar_shopcart .sidebar_shopcart_num{
     width: 35px;
@@ -879,6 +884,7 @@ a{
     display: block;
     background: url(../images/sidebarico.png) no-repeat 0 -210px;
     line-height: 35px;
+    color: #fff;
 }
 
 .sidebar_collect{
@@ -1118,4 +1124,7 @@ a{
     display: block;
 }
 
+iframe{
+
+}
 

@@ -1,5 +1,4 @@
 body{
-    qwr
     width: 100%;
     height: 100%;
     background: #f6f6f3;
@@ -262,13 +261,12 @@ a{
 .forget_password a {
     color: #6c6c6c;
 }
-.u_info_btn button {
+.u_login_btn button {
     width: 326px;
     height: 36px;
     color: rgb(255, 255, 255);
     text-align: center;
     line-height: 36px;
-    font-family: å¾®è½¯é›…é»‘;
     font-size: 20px;
     letter-spacing: 6px;
     padding-left: 6px;
@@ -279,6 +277,7 @@ a{
     border-color: initial;
     border-image: initial;
 }
+
 .mclogin_footer{
     border-top: 1px #e3e3e3 dotted;
     padding-top: 20px;

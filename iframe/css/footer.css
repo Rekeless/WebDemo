@@ -1,0 +1,113 @@
+.w1100{
+    width: 1100px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    color: #6c6c6c;
+    font-size: 12px;
+}
+body,ul,ol,li,dl,dt,dd{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+/*footer S*/
+.footer{
+    clear: both;
+    width: 100%;
+    background: #fff;
+}
+.footer_intro {
+    margin: 0 auto 35px;
+    padding-top: 34px;
+    padding-left: 16px;
+    height: 100px;
+}
+.footer_intro dl {
+    float: left;
+    width: 122px;
+    margin-left: 20px;
+}
+.footer_intro dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer_intro dl dd a {
+    color: #6c6c6c;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+}
+.footer_intro .footer_intro_mrl {
+    margin-left: 8px;
+}
+.footer_intro .footer_intro_wechat {
+    width: 103px;
+    float: right;
+}
+.footer_intro .footer_intro_wechat dt {
+    margin-left: 6px;
+}
+.footer_intro .footer_intro_wechat img {
+    display: block;
+    width: 103px;
+    height: 103px;
+}
+.footer_center {
+    height: 35px;
+    background: #00c8ff;
+}
+.footer_center_box {
+    margin: 0 auto;
+}
+.footer_center_box ul {
+    padding-left: 58px;
+    text-align: center;
+    font-size: 0;
+}
+.footer_center_box li {
+    font-family: 微软雅黑;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    width: 134px;
+    height: 35px;
+    line-height: 35px;
+    display: inline-block;
+    padding-left: 30px;
+    text-align: left;
+}
+.fcb_invest {
+    background: url(../../images/assure2.png) no-repeat 0 0;
+}
+.fcb_quality{
+    background: url(../../images/assure2.png) no-repeat 0 -35px;
+}
+.fcb_quality{
+    background: url(../../images/assure2.png) no-repeat 0 -70px;
+}
+.fcb_quality{
+    background: url(../../images/assure2.png) no-repeat 0 -105px;
+}
+.footer_copyright p {
+    text-align: center;
+}
+.footer_copyright .footer_c_text1 {
+    margin-bottom: 7px;
+}
+.footer_copyright .footer_c_text2 {
+    margin-bottom: 20px;
+}
+.footer_copyright .footer_c_text2 a {
+    color: #6c6c6c;
+}

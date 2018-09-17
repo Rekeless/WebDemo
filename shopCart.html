@@ -8,7 +8,7 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/shopCart.js"></script>
 </head>
-<body>
+<body onload="checkCookie()">
 <!--header S-->
 <div class="header">
 
@@ -142,21 +142,21 @@
                 <li>
                     <div class="mcci_goods_number">
                         <span class="mcci_goods_number_decrease"></span>
-                        <input type="text" class="mcci_goods_number_input">
+                        <div  class="mcci_goods_number_input">1</div>
                         <span class="mcci_goods_number_increase"></span>
                     </div>
                 </li>
-                <li>￥149.7</li>
-                <li>149</li>
-                <li><p>删除</p><p>收藏</p></li>
+                <li id="goods_price_total">￥49.9</li>
+                <li id="goods_score">49</li>
+                <li><p id="goods_drop">删除</p><p>收藏</p></li>
             </ul>
             <ul class="mcci_footer">
                 <li class="mcci_footer_clearall">全部清空</li>
                 <li class="mcci_footer_goshopping">继续购物</li>
                 <li class="mcci_footer_number">
-                    共<i>3</i>件商品&nbsp;&nbsp;应付金额(不含运费)：
+                    共<i>1</i>件商品&nbsp;&nbsp;应付金额(不含运费)：
                 </li>
-                <li class="mcci_footer_total_price"><i>￥</i>149.7</li>
+                <li class="mcci_footer_total_price"><i>￥</i>49.9</li>
                 <li class="mcci_footer_afford">去结算</li>
             </ul>
         </div>
